@@ -1,0 +1,154 @@
+/*--BODY--*/
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: antiquewhite;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    border: 0;
+}
+.welcome{
+    background-image: url("img/welcome.png");
+    min-height: 100%;
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 768px;
+    
+}
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+/* Turn off parallax scrolling for tablets and phones *
+@media only screen and (max-device-width: 1024px) {
+    .welcome {
+        background-attachment: scroll;
+    }
+*/
+h1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 20px;
+}
+h2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 40px;
+}
+h1, h2{
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 55px;
+    padding-left: 80px;
+}
+/*--NAVEGATION BAR--*/
+nav{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left:70%;
+    overflow: hidden;
+}
+nav li{
+    display: inline;
+    float: left;
+}
+nav li a{
+    display: block;
+    padding: 8px;
+    color: black;
+}
+nav a:hover{
+    text-decoration: line-through;
+    color: black;
+}
+nav a:active{
+    text-decoration: line-through;
+    color: red;
+}
+/*--PARALLAX--*/
+.parallax{
+    background-color: white;
+}
+.parallax-inner{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+p #text{
+    float: left;
+    margin-right: 30px;
+}
+#logo{
+    float: left;
+    margin: 20px;
+}
+
+/*-- SKILLS --*/
+/*--GALLERY--*/
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+    /** Unhide lightbox **/
+	display: inline;
+}
+/*--FOOTER--*/
+footer{
+    background-color: #181818;
+    padding-bottom: 20px;
+}
+footer h1{
+    color: whitesmoke;
+}
+footer h2{
+    color: whitesmoke;
+}
+footer{
+    color: whitesmoke;
+}
+.parallax-inner #footer{
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
