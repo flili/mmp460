@@ -10,32 +10,54 @@ body{
     border: 0;
 }
 .welcome{
-    background-image: url("img/welcome.png");
+    margin-top: -100px; 
+    background-color: #181818;
     min-height: 100%;
     position: relative;
-    opacity: 0.65;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 768px;
-    
-}
-.caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
 }
 
-/* Turn off parallax scrolling for tablets and phones *
-@media only screen and (max-device-width: 1024px) {
-    .welcome {
-        background-attachment: scroll;
-    }
-*/
+/*WELCOME TYPE*/
+/* Global */
+.captionw{
+    padding-top: 350px;
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 6px solid rgba(255,255,255,.75);
+    font-size: 50%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-10%);
+    font-size: 9.5em;
+    color: white;
+    font-family: 'Playfair Display'
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 5s steps(34) 1s 1 normal both,
+             blinkTextCursor 800ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 6em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+/* END OF Animation type of welcome*/
+
 h1{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -91,10 +113,6 @@ nav a:active{
 .parallax{
     background-color: white;
 }
-.parallax-inner{
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
 p #text{
     float: left;
     margin-right: 30px;
@@ -105,39 +123,66 @@ p #text{
 }
 
 /*-- SKILLS --*/
+#skills{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
 /*--GALLERY--*/
-.lightbox {
-	/** Default lightbox to hidden */
-	display: none;
-
-	/** Position and style */
-	position: fixed;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
+.gallery{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.container .row1 {
+    position: relative;
+    width: 100%;
+}
+img {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-.lightbox img {
-	/** Pad the lightbox image */
-	max-width: 90%;
-	max-height: 80%;
-	margin-top: 2%;
+.caption {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
 }
 
-.lightbox:target {
-	/** Remove default browser outline */
-	outline: none;
-    /** Unhide lightbox **/
-	display: inline;
+.container:hover .image {
+  opacity: 0.2;
+}
+.container:active .image {
+    opacity: 10;
+}
+
+.container:hover .caption {
+  opacity: 1;
+}
+
+row1 col-sm-4 .text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 /*--FOOTER--*/
 footer{
     background-color: #181818;
     padding-bottom: 20px;
+    color: whitesmoke;
 }
 footer h1{
     color: whitesmoke;
@@ -145,10 +190,9 @@ footer h1{
 footer h2{
     color: whitesmoke;
 }
-footer{
-    color: whitesmoke;
-}
 .parallax-inner #footer{
     padding-top: 20%;
     padding-bottom: 10%;
+}
+#footer{
 }
