@@ -9,7 +9,8 @@
     <title>Portfolio: Fane Li Li</title>
     <link rel="stylesheet" href="css/style.css">
 <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto+Slab:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
 </head>
 <!-- BODY -->
 <body>
@@ -25,27 +26,23 @@
         </ul>
     </nav>
 <!-- END NAVEGATION BAR -->
-<!-- WELCOME PART --
-<div class="jumbotron" id="home">
-    <p>Portfolio</p>
-        <h1>Fane Li</h1>
-            
-</div>
-    
-<!-- END WELCOME PART -->
-<!-- PARALLAX -->
-    <div class="welcome">
-        <div class="caption">
+<!-- WELCOME PART -->
+<div class="welcome">
+        <div class="captionw">
             <p class="line-1 anim-typewriter">Welcome.</p>
 
 
         </div>
     </div>
     
+<!-- END WELCOME PART -->
+<!-- PARALLAX -->
+    
+    
     
     <section class="parallax" id="skills">
         <div class="parallax-inner">
-            <h1>Skills</h1>
+            <h2>Skills</h2>
         <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             <dl>
   <dt>A title of the graph</dt>
@@ -72,84 +69,173 @@
 </dl>
         </div>
     </section>
-<div>
 <!-- END PARALLAX -->
 <!-- GALLERY -->
-    <div id="gallery">
-    <h1>Gallery</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-        <a href="#img1">
-            <img src="img/img1.png" class="thumbnail" width="300">
-        </a>
-<!-- lightbox container hidden with CSS -->
-        <a href="#_" class="lightbox" id="img1">
-            <img src="img/img1.png">
-        </a>
-        <a href="#img1">
-            <img src="http://via.placeholder.com/300x300">
-        </a>
-<!-- lightbox container hidden with CSS -->
-        <a href="#_" class="lightbox" id="img1">
-            <img src="img/img2.png">
-        </a>
+    
+    
+<div id="gallery">
+    <!-- MAIN (Center website) -->
+<div class="main">
+
+<h2>Gallery</h2>
+<input type="radio" onclick="filterSelection('all')" name="category" checked> Show all
+<input type="radio" onclick="filterSelection('WebDesign')" name="category"> Web Design
+<input type="radio" onclick="filterSelection('GraphicDesign')" name="category"> Graphic Design
+<input type="radio" onclick="filterSelection('js.p5')" name="category"> js.p5
+
+<!-- Portfolio Gallery Grid -->
+<div class="rowg">
+  <div class="column WebDesign">
+    <div class="content">
+      <img src="appPAGE.JPG" alt="app" style="width:100%">
+      <h4>App Website.</h4>
+      <p><a href="https://flili.github.io/MMP/app/index.html">Go to the page.</a></p>
     </div>
+  </div>
+  <div class="column WebDesign">
+    <div class="content">
+    <img src="AIGA.JPG" alt="Lights" style="width:100%">
+      <h4>AIGA/NY page</h4>
+      <p><a href="https://flili.github.io/MMP/assigW&B/index.html">Go to the page.</a></p>
+    </div>
+  </div>
+  <div class="column WebDesign">
+    <div class="content">
+    <img src="img/img3.png" alt="Nature" style="width:100%">
+      <h4>web</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  
+  <div class="column GraphicDesign">
+    <div class="content">
+      <img src="../../mma215/lili_f_FinalCoverMagazine/cover.jpg" alt="Car" style="width:100%">
+      <h4>cover</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column GraphicDesign">
+    <div class="content">
+    <img src="../../mma215/lili_f_FinalCoverMagazine/cover2.jpg" alt="Car" style="width:100%">
+      <h4>page1</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column GraphicDesign">
+    <div class="content">
+    <img src="../../mma215/lili_f_FinalCoverMagazine/cover3.jpg" alt="Car" style="width:100%">
+      <h4>page2</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column GraphicDesign">
+    <div class="content">
+    <img src="../../mma215/lili_f_FinalCoverMagazine/cover4.jpg" alt="Car" style="width:100%">
+      <h4>page3</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column GraphicDesign">
+    <div class="content">
+    <img src="../../mma215/lili_f_FinalCoverMagazine/cover5.jpg" alt="Car" style="width:100%">
+      <h4>page4</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column GraphicDesign">
+    <div class="content">
+    <img src="../../mma215/lili_f_FinalCoverMagazine/cover6.jpg" alt="Car" style="width:100%">
+      <h4>page5</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    
+    
+    
+    
+  <div class="column js.p5">
+    <div class="content">
+      <img src="img/img1.png" alt="js.p5" style="width:100%">
+      <h4>Girl</h4>
+      <p><a href="https://flili.github.io/mmp210/assignment6/index.html">Animation.jsp5</a></p>
+    </div>
+  </div>
+  <div class="column js.p5">
+    <div class="content">
+    <img src="img/img2.png" alt="js.p5" style="width:100%">
+      <h4>Man</h4>
+      <p><a href="https://flili.github.io/mmp210/assignment7/index.html">Windows.jsp5</a></p>
+    </div>
+  </div>
+  <div class="column js.p5">
+    <div class="content">
+    <img src="img/img3.png" alt="js.p5" style="width:100%">
+      <h4>Woman</h4>
+      <p><a href="https://flili.github.io/mmp210/assignment10/index.html">Animation.jsp5</a></p>
+    </div>
+  </div>
+<!-- END GRID -->
 </div>
+
+<!-- END MAIN -->
+</div>
+    </div>      
+        
 <!-- END GALLERY -->
 <!-- FOOTER CONTACT -->
     <footer>
         <div class="parallax-inner" id="footer">
             <h1>Contact</h1>
                 <div class="container">
-<div class="inf">
-	<div class="row">
-	<div class="col-md-12">
-	<div class="col-md-4">
-			<p>
-            <br>
-            <br>
-			<strong>phone</strong><br>
-			123-456-7890<br>
-			<strong>e-mail</strong><br>
-			fane.lili@stu.bmcc.cuny.edu
-			</p>
-		</div>
-		<div class="col-md-8">
-		<div class="col-md-6">
-			<div class="form-group">
-					<label for="inputName">Name</label>
-					<input class="form-control" type="text" id="inputName" placeholder="Your Name">
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div class="form-group">
-					<label for="inputEmail">Email</label>
-					<input class="form-control" type="text" id="inputEmail" placeholder="example@domain.com">
-			</div>
-		</div>
-		<div class="col-md-12">
-			<div class="form-group">
-					<label for="inputSubject">Subject</label>
-					<input class="form-control" type="text" id="inputSubject" placeholder="Subject">
-			</div>
-		</div>
-		<div class="col-md-12">
-			<div class="form-group">
-    				Message
-    				<textarea class="form-control" id="inputMessage" rows="5" placeholder="Message"></textarea>
-  			</div>
-  		</div>
-  		<div class="col-md-3 col-md-offset-5">
-        <a href="#" class="btn btn-block btn-lg btn-default">send</a>
-      </div>
-		</div>
-		</div>
-	</div>
-</div>
-</div>
+                    <div class="inf">
+                        <div class="row">
+                        <div class="col-md-12">
+                        <div class="col-md-4">
+                            <p>
+                                <br>
+                                <br>
+                                <strong>phone</strong><br>
+                                123-456-7890<br>
+                                <strong>e-mail</strong><br>
+                                fane.lili@stu.bmcc.cuny.edu
+                            </p>
+                            </div>
+                        <div class="col-md-8">
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="inputName">Name</label>
+                            <input class="form-control" type="text" id="inputName" placeholder="Your Name">
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input class="form-control" type="text" id="inputEmail" placeholder="example@domain.com">
+                            </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                <label for="inputSubject">Subject</label>
+                                    <input class="form-control" type="text" id="inputSubject" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                            <div class="form-group">
+                                Message
+                            <textarea class="form-control" id="inputMessage" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            </div>
+                            <div class="col-md-3 col-md-offset-5">
+                                <a href="#" class="btn btn-block btn-lg btn-default">send</a>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
 
         </div>
     </footer>
-    
 <!-- END FOOTER CONTACT -->
     
 <!-- Script -->
