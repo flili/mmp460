@@ -15,16 +15,44 @@
 <!-- BODY -->
 <body>
 <!-- NAVEGATION BAR -->
-    <nav class="navbar-fixed-top">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#gallery">Gallery</a></li>    
-            <li><a href="#footer">Contact</a></li>
-        
-        </ul>
-    </nav>
+    <div class="wrapper">
+
+        <nav id="sidebar">
+            <!-- Close Sidebar Button -->
+            <div id="dismiss">
+                <i class="glyphicon glyphicon-arrow-left"></i>
+            </div>
+
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>Collapsible Sidebar</div>
+            </div>
+
+            <!-- Sidebar Links -->
+            <ul class="list-unstyled components">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><!-- Link with dropdown items -->
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                    </ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>
+                Toggle Sidebar
+            </button>
+        <div>
+
+        <div class="overlay"><div>
+</div>
 <!-- END NAVEGATION BAR -->
 <!-- WELCOME PART -->
 <div class="welcome">
@@ -71,81 +99,116 @@
     </section>
 <!-- END PARALLAX -->
 <!-- GALLERY -->
+    
+    
 <div id="gallery">
-    <h2>Gallery</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-    <h2>Fade in a Box</h2>
-<div class="container">
-    <div class="cal-md-12">
-    <div class="row1">
-        <div class= "col-sm-4">
-        <img src="img/img1.png" alt="image1" class=".img-responsive" style="width:100%">
-            <div class="caption">
-                <div class="text"><a href="https://flili.github.io/mmp210/assignment6/index.html">Animation.jsp5</a></div>
-            </div>    
-        </div>
-        <div class="col-sm-4">
-        <img src="img/img2.png" alt="image2" class=".img-responsive" style="width:100%">
-            <div class="caption">
-                <div class="text"><a href="https://flili.github.io/mmp210/assignment7/index.html">Windows.jsp5</a></div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-        <img src="img/img3.png" alt="image3" class=".img-responsive" style="width:100%">
-            <div class="caption">
-                <div class="text"><a href="https://flili.github.io/mmp210/assignment10/index.html">Animation.jsp5</a></div>
-            </div>
-        </div>
+    <!-- MAIN (Center website) -->
+<div class="main">
+
+<h2>Gallery</h2>
+<input type="radio" onclick="filterSelection('all')" name="category" checked> Show all
+<input type="radio" onclick="filterSelection('WebDesign')" name="category"> Web Design
+<input type="radio" onclick="filterSelection('GraphicDesign')" name="category"> Graphic Design
+<input type="radio" onclick="filterSelection('js.p5')" name="category"> js.p5
+
+<!-- Portfolio Gallery Grid -->
+<div class="rowg">
+  <div class="column WebDesign">
+    <div class="content">
+      <img src="appPAGE.JPG" alt="app" style="width:100%">
+      <h4>App Website.</h4>
+      <p><a href="https://flili.github.io/MMP/app/index.html">Go to the page.</a></p>
     </div>
-        
-        
-        
-        
-        
-        
-<div class="container"> 
-    <div class="row2">
-            <div class= "col-sm-4">
-        <img src="../../mma215/lili_f_FinalCoverMagazine/cover.jpg" alt="image1" class=".img-responsive" style="width:100%">
-            <div class="caption">
-                <div class="text">cover</div>
-            </div>    
-        </div>
-        <div class="col-sm-4">
-        <img src="../../mma215/lili_f_FinalCoverMagazine/cover2.jpg" alt="image2" class=".img-responsive" style="width:100%">
-            <div class="caption">
-                <div class="text">page1</div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-        <img src="../../mma215/lili_f_FinalCoverMagazine/cover3.jpg" alt="image3" class=".img-responsive" style="width:100%">
-            <div class="caption">
-                <div class="text">page2</div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-        <img src="../../mma215/lili_f_FinalCoverMagazine/cover4.jpg" alt="image3" class=".img-responsive" style="width:100%">
-            <div class="caption">
-                <div class="text">page3</div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-        <img src="../../mma215/lili_f_FinalCoverMagazine/cover5.jpg" alt="image3" class=".img-responsive" style="width:100%">
-            <div class="caption">
-                <div class="text">page4</div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-        <img src="../../mma215/lili_f_FinalCoverMagazine/cover6.jpg" alt="image3" class=".img-responsive" style="width:100%">
-            <div class="caption">
-                <div class="text">page5</div>
-            </div>
-        </div>
+  </div>
+  <div class="column WebDesign">
+    <div class="content">
+    <img src="AIGA.JPG" alt="Lights" style="width:100%">
+      <h4>AIGA/NY page</h4>
+      <p><a href="https://flili.github.io/MMP/assigW&B/index.html">Go to the page.</a></p>
     </div>
+  </div>
+  <div class="column WebDesign">
+    <div class="content">
+    <img src="img/img3.png" alt="Nature" style="width:100%">
+      <h4>web</h4>
+      <p>Lorem ipsum dolor..</p>
     </div>
+  </div>
+  
+  <div class="column GraphicDesign">
+    <div class="content">
+      <img src="../../mma215/lili_f_FinalCoverMagazine/cover.jpg" alt="Car" style="width:100%">
+      <h4>cover</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column GraphicDesign">
+    <div class="content">
+    <img src="../../mma215/lili_f_FinalCoverMagazine/cover2.jpg" alt="Car" style="width:100%">
+      <h4>page1</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column GraphicDesign">
+    <div class="content">
+    <img src="../../mma215/lili_f_FinalCoverMagazine/cover3.jpg" alt="Car" style="width:100%">
+      <h4>page2</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column GraphicDesign">
+    <div class="content">
+    <img src="../../mma215/lili_f_FinalCoverMagazine/cover4.jpg" alt="Car" style="width:100%">
+      <h4>page3</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column GraphicDesign">
+    <div class="content">
+    <img src="../../mma215/lili_f_FinalCoverMagazine/cover5.jpg" alt="Car" style="width:100%">
+      <h4>page4</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column GraphicDesign">
+    <div class="content">
+    <img src="../../mma215/lili_f_FinalCoverMagazine/cover6.jpg" alt="Car" style="width:100%">
+      <h4>page5</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+    
+    
+    
+    
+  <div class="column js.p5">
+    <div class="content">
+      <img src="img/img1.png" alt="js.p5" style="width:100%">
+      <h4>Girl</h4>
+      <p><a href="https://flili.github.io/mmp210/assignment6/index.html">Animation.jsp5</a></p>
+    </div>
+  </div>
+  <div class="column js.p5">
+    <div class="content">
+    <img src="img/img2.png" alt="js.p5" style="width:100%">
+      <h4>Man</h4>
+      <p><a href="https://flili.github.io/mmp210/assignment7/index.html">Windows.jsp5</a></p>
+    </div>
+  </div>
+  <div class="column js.p5">
+    <div class="content">
+    <img src="img/img3.png" alt="js.p5" style="width:100%">
+      <h4>Woman</h4>
+      <p><a href="https://flili.github.io/mmp210/assignment10/index.html">Animation.jsp5</a></p>
+    </div>
+  </div>
+<!-- END GRID -->
 </div>
-    </div>
+
+<!-- END MAIN -->
 </div>
+    </div>      
+        
 <!-- END GALLERY -->
 <!-- FOOTER CONTACT -->
     <footer>
